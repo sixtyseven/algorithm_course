@@ -1,9 +1,11 @@
 /***
  * Merging with smaller auxiliary array.
- * Suppose that the subarray a[0]\mathtt{a[0]}a[0] to a[n−1]\mathtt{a[n-1]}a[n−1] is sorted and
- * the subarray a[n]\mathtt{a[n]}a[n] to a[2∗n−1]\mathtt{a[2*n-1]}a[2∗n−1] is sorted.
- * How can you merge the two subarrays so that a[0]\mathtt{a[0]}a[0] to a[2∗n−1]\mathtt{a[2*n-1]}a[2∗n−1]
- * is sorted using an auxiliary array of length nnn (instead of 2n2n2n)?
+ * Suppose that the subarray a[0] to a[n−1] is sorted and
+ * the subarray a[n] to a[2∗n−1] is sorted.
+ * How can you merge the two subarrays so that a[0] to a[2∗n−1]
+ * is sorted using an auxiliary array of length nnn (instead of 2n)?
+ *
+ * Hint: copy only the left half into the auxiliary array.
  */
 public class MergeSmallerAux {
     private static void merge(Comparable[] a, Comparable[] aux, int lo, int mid, int hi) {
