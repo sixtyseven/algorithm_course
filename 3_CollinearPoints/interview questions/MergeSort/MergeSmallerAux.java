@@ -106,4 +106,6 @@ public class MergeSmallerAux {
             System.out.println(integer);
         }
     }
-}
+
+
+124
